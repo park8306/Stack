@@ -22,7 +22,6 @@ public class MovingCube : MonoBehaviour
     {
         float elapsTime = Time.time - startTime;
         time = Mathf.Abs(elapsTime % 2 - 1f);
-        print(time);
         pos = Vector3.Lerp(desPoint, startPoint, time);
         transform.position = pos;
     }
